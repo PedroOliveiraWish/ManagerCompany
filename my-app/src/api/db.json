@@ -1,0 +1,227 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Ana",
+      "email": "ana@empresa.com",
+      "senha": "123456",
+      "perfil": "funcionario",
+      "data_cadastro": "2024-08-15",
+      "departamento": "Tecnologia da Informação"
+    },
+    {
+      "id": 2,
+      "nome": "Carlos",
+      "email": "carlos@empresa.com",
+      "senha": "123456",
+      "perfil": "gestor",
+      "data_cadastro": "2023-05-20",
+      "departamento": "Marketing"
+    },
+    {
+      "id": 3,
+      "nome": "Fernanda",
+      "email": "fernanda@empresa.com",
+      "senha": "123456",
+      "perfil": "diretor",
+      "data_cadastro": "2022-11-01",
+      "departamento": "Executivo"
+    },
+    {
+      "id": 4,
+      "nome": "Pedro",
+      "email": "pedro@empresa.com",
+      "senha": "senha123",
+      "perfil": "funcionario",
+      "data_cadastro": "2024-09-01",
+      "departamento": "Vendas"
+    },
+    {
+      "id": 5,
+      "nome": "Mariana",
+      "email": "mariana@empresa.com",
+      "senha": "mudar123",
+      "perfil": "funcionario",
+      "data_cadastro": "2025-01-10",
+      "departamento": "Recursos Humanos"
+    },
+    {
+      "id": 6,
+      "nome": "Lucas",
+      "email": "lucas@empresa.com",
+      "senha": "securepass",
+      "perfil": "funcionario",
+      "data_cadastro": "2023-07-22",
+      "departamento": "Financeiro"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Integração na empresa",
+      "descricao": "Curso introdutório para novos colaboradores",
+      "funcionario_id": 1,
+      "data_inicio": "2025-05-01",
+      "data_fim": "2025-05-05",
+      "carga_horaria": "16 horas",
+      "topicos": [
+        "Cultura da Empresa",
+        "Processos Internos",
+        "Ferramentas de Trabalho"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Segurança no Trabalho",
+      "descricao": "Curso obrigatório sobre segurança",
+      "funcionario_id": 5,
+      "data_inicio": "2025-06-10",
+      "data_fim": "2025-06-12",
+      "carga_horaria": "8 horas",
+      "topicos": [
+        "Normas de Segurança",
+        "Prevenção de Acidentes",
+        "Primeiros Socorros"
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Excel Avançado",
+      "descricao": "Treinamento em funcionalidades avançadas do Excel",
+      "funcionario_id": 2,
+      "data_inicio": "2025-07-15",
+      "data_fim": "2025-07-18",
+      "carga_horaria": "12 horas",
+      "topicos": ["Tabelas Dinâmicas", "Funções Complexas", "Macros"]
+    },
+    {
+      "id": 4,
+      "titulo": "Liderança de Equipes",
+      "descricao": "Curso para desenvolvimento de habilidades de liderança",
+      "funcionario_id": 2,
+      "data_inicio": "2025-08-01",
+      "data_fim": "2025-08-03",
+      "carga_horaria": "10 horas",
+      "topicos": [
+        "Comunicação Eficaz",
+        "Motivação de Equipes",
+        "Gestão de Conflitos"
+      ]
+    }
+  ],
+
+  "kpis": [
+    {
+      "id": 1,
+      "titulo": "Faturamento",
+      "valor": 120000,
+      "unidade": "R$",
+      "data_registro": "2025-04-23",
+      "meta": 150000,
+      "descricao": "Receita total gerada pela empresa.",
+      "status": "Abaixo da Meta",
+      "progresso": 80
+    },
+    {
+      "id": 2,
+      "titulo": "Satisfação dos Clientes",
+      "valor": 87,
+      "unidade": "%",
+      "data_registro": "2025-04-23",
+      "meta": 90,
+      "descricao": "Porcentagem de clientes que relataram satisfação com os serviços/produtos.",
+      "status": "Próximo à Meta",
+      "progresso": 96.67
+    },
+    {
+      "id": 3,
+      "titulo": "Taxa de Conversão de Leads",
+      "valor": 15.5,
+      "unidade": "%",
+      "data_registro": "2025-04-23",
+      "meta": 18,
+      "descricao": "Porcentagem de leads convertidos em clientes pagantes.",
+      "status": "Abaixo da Meta",
+      "progresso": 86.11
+    },
+    {
+      "id": 4,
+      "titulo": "Taxa de Absenteísmo",
+      "valor": 2.1,
+      "unidade": "%",
+      "data_registro": "2025-04-23",
+      "meta": 1.5,
+      "descricao": "Porcentagem de ausências no quadro de funcionários.",
+      "status": "Acima da Meta",
+      "progresso": 140
+    },
+    {
+      "id": 5,
+      "titulo": "Custo por Aquisição de Cliente (CAC)",
+      "valor": 45.75,
+      "unidade": "R$",
+      "data_registro": "2025-04-23",
+      "meta": 40,
+      "descricao": "Custo médio incorrido para adquirir um novo cliente.",
+      "status": "Acima da Meta",
+      "progresso": 114.38
+    }
+  ],
+
+  "especificacoes_funcionarios": [
+    {
+      "id": 1,
+      "funcionario_nome": "Ana",
+      "cargo": "Analista de TI",
+      "setor": "Tecnologia",
+      "tempo_empresa": "2 anos",
+      "data_admissao": "2023-04-10",
+      "salario": 5000
+    },
+    {
+      "id": 2,
+      "funcionario_nome": "Carlos",
+      "cargo": "Analista de Marketing",
+      "setor": "Marketing",
+      "tempo_empresa": "1 ano e 6 meses",
+      "data_admissao": "2023-10-20",
+      "salario": 4500
+    },
+    {
+      "id": 3,
+      "funcionario_nome": "Fernanda",
+      "cargo": "Gerente de Projetos",
+      "setor": "Executivo",
+      "tempo_empresa": "5 anos",
+      "data_admissao": "2020-05-15",
+      "salario": 8000
+    },
+    {
+      "id": 4,
+      "funcionario_nome": "Pedro",
+      "cargo": "Vendedor",
+      "setor": "Vendas",
+      "tempo_empresa": "9 meses",
+      "data_admissao": "2024-07-01",
+      "salario": 3200
+    },
+    {
+      "id": 5,
+      "funcionario_nome": "Mariana",
+      "cargo": "Assistente de RH",
+      "setor": "Recursos Humanos",
+      "tempo_empresa": "3 anos e 2 meses",
+      "data_admissao": "2022-12-01",
+      "salario": 3800
+    },
+    {
+      "id": 6,
+      "funcionario_nome": "Lucas",
+      "cargo": "Analista Financeiro",
+      "setor": "Financeiro",
+      "tempo_empresa": "2 anos e 8 meses",
+      "data_admissao": "2023-08-05",
+      "salario": 5500
+    }
+  ]
+}
