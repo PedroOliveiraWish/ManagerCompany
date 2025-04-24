@@ -8,15 +8,21 @@ function CardKPI(kpi: KPI) {
   return (
     <Card className="mb-3">
       <Card.Body>
-        <Card.Title>{kpi.titulo}</Card.Title>
-        <Card.Text>{kpi.descricao}</Card.Text>
-        <Card.Text>
-          <span> | valor: {kpi.valor}</span>
-          <span> | unidade: {kpi.unidade}</span>
-          <span> | meta: {kpi.meta}</span>
-          <span> | data: {kpi.data_registro}</span>
-        </Card.Text>
-        <ProgressBar now={kpi.progresso} label={`${kpi.progresso} %`} />
+        <Card.Title className="fw-semibold text-primary">{kpi.titulo}</Card.Title>
+        <Card.Text className="text-muted">{kpi.descricao}</Card.Text>
+
+        <div className="mb-3">
+          <div className="info"><strong>Valor:</strong> {kpi.valor}</div>
+          <div className="info"><strong>Unidade:</strong> {kpi.unidade}</div>
+          <div className="info"><strong>Meta:</strong> {kpi.meta}</div>
+          <div className="info"><strong>Data:</strong> {kpi.data_registro}</div>
+        </div>
+
+        <ProgressBar
+          now={kpi.progresso}
+          label={`${kpi.progresso}%`}
+          variant={kpi.progresso >= 100 ? "success" : "info"}
+        />
       </Card.Body>
       <Card.Footer>
         <div className="d-flex justify-content-between align-items-center">

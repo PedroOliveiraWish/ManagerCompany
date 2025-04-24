@@ -107,6 +107,90 @@
         "Motivação de Equipes",
         "Gestão de Conflitos"
       ]
+    },
+    {
+      "id": 5,
+      "titulo": "Atendimento ao Cliente",
+      "descricao": "Capacitação em técnicas de atendimento e relacionamento com o cliente",
+      "funcionario_id": 1,
+      "data_inicio": "2025-09-05",
+      "data_fim": "2025-09-08",
+      "carga_horaria": "10 horas",
+      "topicos": [
+        "Empatia e Comunicação",
+        "Resolução de Problemas",
+        "Satisfação do Cliente"
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Gestão de Projetos",
+      "descricao": "Introdução às metodologias ágeis e gerenciamento de projetos",
+      "funcionario_id": 4,
+      "data_inicio": "2025-10-01",
+      "data_fim": "2025-10-06",
+      "carga_horaria": "14 horas",
+      "topicos": [
+        "Scrum e Kanban",
+        "Planejamento de Projetos",
+        "Gestão de Riscos"
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Comunicação Corporativa",
+      "descricao": "Aprimoramento das habilidades de comunicação no ambiente empresarial",
+      "funcionario_id": 6,
+      "data_inicio": "2025-10-15",
+      "data_fim": "2025-10-17",
+      "carga_horaria": "8 horas",
+      "topicos": [
+        "Clareza e Objetividade",
+        "Comunicação Não Violenta",
+        "Feedback Construtivo"
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Fundamentos de Programação",
+      "descricao": "Curso introdutório para lógica de programação e algoritmos",
+      "funcionario_id": 1,
+      "data_inicio": "2025-11-01",
+      "data_fim": "2025-11-05",
+      "carga_horaria": "20 horas",
+      "topicos": [
+        "Lógica de Programação",
+        "Estruturas Condicionais",
+        "Laços de Repetição"
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Ética e Conduta Profissional",
+      "descricao": "Curso sobre ética no ambiente de trabalho",
+      "funcionario_id": 3,
+      "data_inicio": "2025-11-20",
+      "data_fim": "2025-11-21",
+      "carga_horaria": "6 horas",
+      "topicos": [
+        "Ética Empresarial",
+        "Comportamento Profissional",
+        "Relacionamento Interpessoal"
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Gestão do Tempo",
+      "descricao": "Curso sobre técnicas para aumentar a produtividade",
+      "funcionario_id": 4,
+      "data_inicio": "2025-12-01",
+      "data_fim": "2025-12-03",
+      "carga_horaria": "9 horas",
+      "topicos": [
+        "Matriz de Eisenhower",
+        "Planejamento Diário",
+        "Priorização de Tarefas"
+      ]
     }
   ],
 
@@ -154,17 +238,6 @@
       "descricao": "Porcentagem de ausências no quadro de funcionários.",
       "status": "Acima da Meta",
       "progresso": 140
-    },
-    {
-      "id": 5,
-      "titulo": "Custo por Aquisição de Cliente (CAC)",
-      "valor": 45.75,
-      "unidade": "R$",
-      "data_registro": "2025-04-23",
-      "meta": 40,
-      "descricao": "Custo médio incorrido para adquirir um novo cliente.",
-      "status": "Acima da Meta",
-      "progresso": 114.38
     }
   ],
 
@@ -222,6 +295,74 @@
       "tempo_empresa": "2 anos e 8 meses",
       "data_admissao": "2023-08-05",
       "salario": 5500
+    }
+  ],
+  "modulos_curso_programacao": [
+    {
+      "id": 1,
+      "titulo": "Introdução à Lógica de Programação",
+      "descricao": "Conceitos fundamentais como algoritmos, variáveis, estruturas condicionais e de repetição.",
+      "conteudos": [
+        "O que é programação?",
+        "Algoritmos e fluxogramas",
+        "Variáveis e tipos de dados",
+        "Condicionais (if/else)",
+        "Laços de repetição (for/while)"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Fundamentos de Linguagens de Programação",
+      "descricao": "Apresentação das principais linguagens e sintaxes básicas com foco em lógica.",
+      "conteudos": [
+        "Sintaxe básica (C#, Java, Python)",
+        "Declaração de variáveis",
+        "Entrada e saída de dados",
+        "Funções e escopos",
+        "Boas práticas de codificação"
+      ]
+    }
+  ],
+  "questionario_curso_programacao": [
+    {
+      "id": 1,
+      "pergunta": "O que é um algoritmo?",
+      "alternativas": [
+        "Um tipo de linguagem de programação",
+        "Um software de computador",
+        "Uma sequência lógica de instruções para resolver um problema",
+        "Uma variável especial"
+      ],
+      "resposta_correta": 2
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual destas é uma estrutura condicional?",
+      "alternativas": ["if/else", "for", "while", "switch"],
+      "resposta_correta": 0
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual é a principal finalidade de um loop (laço)?",
+      "alternativas": [
+        "Armazenar dados",
+        "Repetir um bloco de código várias vezes",
+        "Comparar duas variáveis",
+        "Executar funções matemáticas"
+      ],
+      "resposta_correta": 1
+    },
+    {
+      "id": 4,
+      "pergunta": "Em qual linguagem de programação usamos 'Console.WriteLine' para exibir algo?",
+      "alternativas": ["Python", "Java", "C#", "JavaScript"],
+      "resposta_correta": 2
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual é o tipo de dado que representa texto em C#?",
+      "alternativas": ["int", "float", "bool", "string"],
+      "resposta_correta": 3
     }
   ]
 }

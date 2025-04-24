@@ -1,0 +1,73 @@
+$background-color: #1d1b1b;
+$font-color: #ffffff;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    @include flex-center;
+    flex-direction: column;
+    background-color: $background-color;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    color: $font-color;
+
+    .controll {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .label {
+            display: block;
+            margin-bottom: 10px;
+            color: $font-color;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: none;
+            border-radius: 5px;
+            color: $font-color;
+            font-size: 16px;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+
+            option {
+                background-color: $background-color;
+                color: $font-color;
+            }
+        }
+    }
+
+    .input::placeholder {
+        color: $font-color;
+        opacity: 0.7; // Firefox lowers the opacity of the placeholder text
+    }
+
+    .button {
+        width: 30%;
+        padding: 10px;
+        background-color: #007bff;
+        color: $font-color;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}

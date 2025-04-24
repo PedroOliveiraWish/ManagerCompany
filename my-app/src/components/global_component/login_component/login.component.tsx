@@ -6,6 +6,8 @@ import { Usuario } from "../../../types/Usuario.type";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
+import "./login.component.css";
+
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -65,10 +67,12 @@ function Login() {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email</Form.Label>
+    <Form onSubmit={handleSubmit} className="login-form">
+      <h1>Login</h1>
+      <Form.Group controlId="formBasicEmail" className="controll">
+        <Form.Label className="label">Email</Form.Label>
         <Form.Control
+          className="input"
           type="email"
           placeholder="Digite seu email"
           value={email}
@@ -76,9 +80,10 @@ function Login() {
         />
       </Form.Group>
 
-      <Form.Group controlId="formBasicPassword">
-        <Form.Label>Senha</Form.Label>
+      <Form.Group controlId="formBasicPassword" className="controll">
+        <Form.Label className="label">Senha</Form.Label>
         <Form.Control
+          className="input"
           type="password"
           placeholder="Digite sua senha"
           value={password}
@@ -86,9 +91,10 @@ function Login() {
         />
       </Form.Group>
 
-      <Form.Group controlId="formBasicPerfil">
-        <Form.Label>Perfil</Form.Label>
+      <Form.Group controlId="formBasicPerfil" className="controll">
+        <Form.Label className="label">Perfil</Form.Label>
         <Form.Control
+          className="input"
           as="select"
           value={perfil}
           onChange={(e) => setPerfil(e.target.value)}
@@ -100,7 +106,7 @@ function Login() {
         </Form.Control>
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" className="button">
         Entrar
       </Button>
     </Form>

@@ -5,6 +5,8 @@ import CardKPI from "../kpi_card/kpi_card";
 
 import { Container } from "react-bootstrap";
 
+import "./kpis_list.css";
+
 function KpisList() {
   const [kpis, setKpis] = useState<KPI[]>([]);
 
@@ -15,7 +17,7 @@ function KpisList() {
         const response = await new Promise<KPI[]>((resolve) => {
           setTimeout(() => {
             resolve(db.kpis);
-          }, 1000);
+          }, 100);
         });
         setKpis(response);
       } catch (error) {
@@ -28,9 +30,11 @@ function KpisList() {
 
   return (
     <Container className="mt-4">
-      {kpis.map((kpi) => (
-        <CardKPI key={kpi.id} {...kpi} />
-      ))}
+      <div className="list-kpi">
+        {kpis.map((kpi) => (
+          <CardKPI key={kpi.id} {...kpi} />
+        ))}
+      </div>
     </Container>
   );
 }
