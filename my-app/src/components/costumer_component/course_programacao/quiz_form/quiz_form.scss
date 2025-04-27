@@ -1,0 +1,85 @@
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #343a40;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      .question {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #dee2e6;
+        transition: all 0.3s;
+  
+        &:hover {
+          border-color: #0d6efd;
+          box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+        }
+  
+        h5 {
+          margin-bottom: 1rem;
+          font-weight: bold;
+          color: #212529;
+        }
+  
+        .alternatives {
+          display: flex;
+          flex-direction: column;
+  
+          label {
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background 0.2s;
+  
+            &:hover {
+              background: #e9ecef;
+            }
+  
+            input {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+  
+      button[type="submit"] {
+        align-self: center;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        background: #0d6efd;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: #0b5ed7;
+        }
+      }
+    }
+  
+    .score {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #198754;
+    }
+  }
+  
